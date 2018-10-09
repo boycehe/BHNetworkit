@@ -1,0 +1,6 @@
+framework module BHNetworkit {
+  umbrella header "BHNetworkit-umbrella.h"
+
+  export *
+  module * { export * }
+}

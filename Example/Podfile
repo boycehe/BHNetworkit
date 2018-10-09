@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BHNetworkit_Example' do
+  pod 'BHNetworkit', :path => '../'
+
+  target 'BHNetworkit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

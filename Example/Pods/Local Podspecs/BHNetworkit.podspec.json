@@ -1,0 +1,49 @@
+{
+  "name": "BHNetworkit",
+  "version": "0.1.0",
+  "summary": "BHNetworkit is a new style networkingkit",
+  "description": "easy",
+  "homepage": "https://git.elenet.me/BH-iOS/BHNetworkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "boycehe.com": "boycehe.com"
+  },
+  "source": {
+    "git": "git@git.elenet.me:BH-iOS/BHNetworkit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "YYModel": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "RAC",
+      "source_files": "BHNetworkit/Classes/RAC/*.{h,m}",
+      "public_header_files": "BHNetworkit/Classes/RAC/*.h"
+    },
+    {
+      "name": "Networking",
+      "dependencies": {
+        "BHNetworkit/RAC": [
+
+        ]
+      },
+      "source_files": "BHNetworkit/Classes/Networking/*.{h,m}",
+      "public_header_files": "BHNetworkit/Classes/Networking/*.h"
+    }
+  ]
+}
